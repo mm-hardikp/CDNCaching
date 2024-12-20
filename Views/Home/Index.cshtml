@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDN Caching Demo</title>
+    <link rel="stylesheet" href="https://cdncaching.pages.dev/css/site.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdncaching.pages.dev/images/dotnet_logo_icon.webp" alt="Logo">
+            @Html.Raw(ViewData["CloudflareContent"])
+    </div>
+</body>
